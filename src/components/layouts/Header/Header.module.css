@@ -1,0 +1,42 @@
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #1f2028;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #c3c3c3;
+}
+
+.navMenu{
+    display: flex;
+    gap: 0.85rem;
+    flex-direction: row;
+    padding: 0 0.7rem;
+}
+
+.userMenu{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    padding: 0 0.7rem;
+}
+
+.loginButton{
+    background-color: #2f6e0e;
+    border: none;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+.loginButton a {
+    text-decoration: none;
+    color: #c3c3c3;
+}
