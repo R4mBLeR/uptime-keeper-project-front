@@ -13,35 +13,39 @@ const LoginPage = () => {
         <>
             <Header/>
             <div className={styles.loginPage}>
-            <form onSubmit={handleSubmit} className={styles.loginForm}>
-                <h2>Вход в аккаунт</h2>
-                <div className={styles.inputForm}>
-                    <label>Email:</label>
-                    <input
-                        type="username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        placeholder="Enter username"
-                        required
-                        className={styles.input}
-                    />
-                </div>
+            <form onSubmit={handleSubmit} className={styles.loginArea}>
+                <h2>Login in account</h2>
+                <div className={styles.loginForm}>
+                    <div className={styles.inputForm}>
+                        <label>Username or email</label>
+                        <input
+                            type="username"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required
+                            className={styles.input}
+                        />
+                    </div>
 
-                <div className={styles.inputForm}>
-                    <label>Пароль:</label>
-                    <input
-                        type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        placeholder="EnterPassword"
-                        required
-                        className={styles.input}
-                    />
+                    <div className={styles.inputForm}>
+                        <label>Password</label>
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                            className={styles.input}
+                        />
+                    </div>
+                    <div className={styles.loginButtonContainer}>
+                        <button type="submit" className={styles.loginButton}>
+                            Login
+                        </button>
+                    </div>
+                    <div className={styles.createAccountLink}>
+                        Don't have a account? <a href='/register'>Create a new account</a>
+                    </div>
                 </div>
-
-                <button type="submit" className={styles.button}>
-                    Login
-                </button>
             </form>
         </div>
         </>

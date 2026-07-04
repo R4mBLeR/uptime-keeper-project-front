@@ -24,19 +24,9 @@
     padding: 0 0.7rem;
 }
 
-.loginButton{
-    background-color: #2f6e0e;
-    border: none;
-    padding: 8px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-}
 
 .loginButton a {
     text-decoration: none;
     color: #c3c3c3;
+    font-size: 14px;
 }

@@ -16,9 +16,9 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={styles.userMenu}>
-                    <button className={styles.loginButton}>
+                    <div className={styles.loginButton}>
                         <a href="/login">Login</a>
-                    </button>
+                    </div>
                 </div>
             </nav>
         </header>
